@@ -9,6 +9,7 @@ header {
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #000;
+    
 }
 
 img {
@@ -20,15 +21,20 @@ h1 {
     text-decoration: none;
     font-size: 4rem;
     margin: 0;
+    color: darkmagenta;
+    
 }
 
 h2 {
    font-family: 'Montserrat Subrayada', sans-serif; 
+   color: navy;
+
 }
 
 h3 {
     font-size: 2rem;
     margin: 0;
+    color: orangered;
 }
 
 #header-text {
