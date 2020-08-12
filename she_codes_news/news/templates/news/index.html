@@ -18,9 +18,11 @@
             <p>No stories are available.</p>
         {% endif %}
     </div>
+    <hr>
+    <hr>
 
     <div id="all-stories">
-        {% if latest_stories %} 
+        {% if all_stories %} 
             {% for story in all_stories %}
             {% include "./storyCard.html" with story=story %}
             {% endfor %}

@@ -84,3 +84,34 @@
     margin: 0 0 10px 10px;
     width: 50%;
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width:80%;
+    border: 2px solid purple;
+    background-color:plum;
+    font-size: 20px;
+
+}
+
+form label{
+
+    color: purple;
+    display: flex;
+    flex-direction: column;
+    margin-left:10%;
+    
+}
+form p {
+    display:flex;
+}
+
+form p label{
+
+    display:20%;
+}
+
+form p input {display: 80%;
+
+}
