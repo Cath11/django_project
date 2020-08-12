@@ -84,7 +84,9 @@
     margin: 0 0 10px 10px;
     width: 50%;
 }
-
+body {
+    background-color: purple;
+}
 form {
     display: flex;
     flex-direction: column;
