@@ -1,3 +1,5 @@
+/* CSS FOR STORIES */
+
 .story-card {
     margin: 2px;
     border: 1px solid #000;
@@ -87,11 +89,35 @@
     margin: 0 0 10px 10px;
     width: 50%;
 }
+
+/* FORM CSS pages */
 body {
     
-    background: rgb(226, 226, 83) url("https://www.themandarin.com.au/wp-content/uploads/2020/03/newspaper.jpg") repeat;
+    background: rgb(219, 142, 219);
     
 }
+
+/* CSS HOME PAGE */
+div.background {
+    background: url("https://www.themandarin.com.au/wp-content/uploads/2020/03/newspaper.jpg") repeat;
+    border: 2px solid black;
+  }
+  
+  div.transbox {
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.9;
+  }
+  
+  div.transbox p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+  }
+    
+/* CSS Form  */
+    
 form {
     display: flex;
     flex-direction: column;

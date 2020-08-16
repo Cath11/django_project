@@ -3,7 +3,7 @@
         {% if not story.img_url %}
             <img src="https://picsum.photos/600">
         {% else %}
-            <img src="{{story.img_url}}">
+            <img src="{{ story.img_url }}">
         {% endif %}
         <div class="story-card-text">
             <h3>{{ story.title }}</h3>

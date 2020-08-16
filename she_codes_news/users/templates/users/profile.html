@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block stylesheets %}
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manjari&display=swap">
+<link rel="stylesheet" type="text/css" href="{% static 'users/styles.css' %}">
+
+{% endblock %}
+
+{% block content %}
+<h2> {{ user }} Here is Your Account Profile </h2>
+
+<img id='profilepic' src ="{{ profile.profile_img }}">
+<h4> Username: {{ user }} </h4>
+<h4> First Name: {{ profile.first_name }} </h4>
+<h4> Family Name: {{ profile.last_name }} </h4>
+<h4> A Bit About You: {{ profile.bio }} </h4>
+<h4>Email: {{ profile.email }}</h4>
+<h4> Your stories are below</h4>
+
+{% if object %}
+  {% for story in object.stories.all %}
+  {{ story }} 
+  {% endfor %}
+{% endif %}
+
+{% endblock %} 

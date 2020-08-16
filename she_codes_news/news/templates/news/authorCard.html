@@ -1,0 +1,12 @@
+<div class="author-card" id="authors-card {{ position }} ">
+    <a href="{% url 'news:authorProfile' author.id %}">
+        <img src="{{ author.profile_img }}" >
+        <div class="abc">
+            <h4>{{ author.first_name }}</h4>
+            <h4>{{ author.last_name }}</h4>
+            <h4>{{ author.bio }}</h4>
+        </div>
+    </a>
+</div>
+
+        

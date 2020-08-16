@@ -7,21 +7,28 @@
         <title>She Codes News</title>
         <meta name="description" content="">
         <meta name="author" content="Cath Leighton">
-        <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manjari&display=swap">
         <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
         {% block stylesheets %}{% endblock %}
     </head>
 
     <body>
         <header>
-            <div id="header-text">
+            <div id="header-text">                              
                 <a id="header-link" href="{% url 'news:index' %}">
                     <h1>She {Codes} News</h1>
                 </a>
             </div>
             {% include './nav.html' %} <!-- include nav here -->
         </header>
+    <div class="background">
+    <div class="transbox">
+
+
 
         {% block content %}{% endblock %}
     </body>
 </html>
+
+
+  

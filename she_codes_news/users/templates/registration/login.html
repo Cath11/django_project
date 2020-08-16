@@ -1,13 +1,24 @@
 {% extends 'base.html' %}
+{% load static %}
+
+
+{% block stylesheets %}
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manjari&display=swap">
+<link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+{% endblock %}
 
 {% block content %}
 <h2>Login</h2>
 <form method = "post">
     {% csrf_token %}
     {{ form.as_p }}
+<div>
     <button type="submit">Login</button>
+</div>
 
 
+
+    <a href="{% url 'users:createAccount' %}"><button>Create an Account</button></a>
 </form>
 
 {% endblock %}
